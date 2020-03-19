@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.main-container {
+  display: flex;
+}
+
+header,
+footer {
+  height: 60px;
+  grid-column: 1/3;
+}
+
+header {
+  margin-top: -60px;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background-color: #222629;
+  display: flex;
+  box-shadow: 1px 3px 5px black;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  text-decoration: none;
+  color: #86c232;
+  margin-right: 25px;
+}
+header h1 {
+  position: relative;
+  display: inline-flex;
+  color: #fff;
+  font-family: sans-serif;
+  text-shadow: -5px 5px 10px black;
+  width: 20%;
+  margin-left: 30px;
+}
+
+header h1 span {
+  color: #86c232;
+  text-shadow: 5px 5px 10px black;
+}
+
+header form {
+  display: flex;
+  flex-grow: 0.15;
+  width: 40vw;
+  align-self: center;
+  position: relative;
+  justify-content: center;
+  margin-left: calc(vw - 30%);
+}
+
+header input {
+  display: inline-block;
+  font-size: 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+header input[type="text"] {
+  background: #fff;
+  height: 35px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0 25px;
+  border-radius: 25px;
+}
+
+header form a{
+  display: inline
+}
+
+header form a i{
+  text-decoration: none;
+  font-size: 1.3em;
+  color: #86c232;
+  opacity:0;
+  padding-top: 8px;
+}
+header ul {
+  display: flex;
+}
+
+header ul li{
+  list-style: none;
+}
+
+header ul .s-btn {
+  text-decoration: none;
+  font-size: 1.4em;
+  color: #86c232;
+}
+header ul li {
+  text-decoration: none;
+}
+@media screen and (max-width: 759px) {
+  header input[type="text"] {
+    opacity: 0;
+  }
+  header form a i{
+    opacity: 1;
+  }
+}
+
+/*--------------------HeaderEnd-----------------------*/
+
+nav {
+  position: relative;
+  margin-top: 60px;
+  width: 250px;
+}
+
+@media screen and (max-width: 759px) {
+  nav {
+    opacity: 0;
+  }
+}
+
+.grid-container {
+  padding: 5px;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  overflow: hidden;
+  grid-gap: 20px;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 759px) {
+  /**/
+}
+
+.grid-container div {
+  height: 200px;
+  width: 100%;
+}
+.box1 {
+  background: lightcoral;
+  border: 1px solid black;
+}
+.box2 {
+  background: lightblue;
+  border: 1px solid black;
+}
+
+.box3 {
+  border: 1px solid black;
+  background: lightgreen;
+}
+
+.box4 {
+  border: 1px solid black;
+  background: lightcyan;
+}
+
+.box5 {
+  border: 1px solid black;
+  background: lightyellow;
+}
+
+.box6 {
+  border: 1px solid black;
+  background: chartreuse;
+}
+
+.box7 {
+  border: 1px solid black;
+  background: red;
+}
+
+.box8 {
+  border: 1px solid black;
+  background: blue;
+}
+
+.box9 {
+  border: 1px solid black;
+  background: blueviolet;
+}
+
+.box10 {
+  border: 1px solid black;
+  background: orange;
+}
+
+.box11 {
+  border: 1px solid black;
+  background: lightseagreen;
+}
+
+.box12 {
+  border: 1px solid black;
+  background: lightslategrey;
+  grid-column: 1/4;
+}
+
+/*
+  Watch page
+*/
+
+.watch-main-container {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.video-container{
+  grid-row: 1/3;
+  grid-column: 1/3;
+}
+
+.comment-container {
+  grid-column: 1/3;
+}
+
+.sugg-container {
+  grid-row: 1/4;
+}
+
